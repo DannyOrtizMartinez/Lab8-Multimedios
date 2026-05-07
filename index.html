@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVMaze Explorer - Danny Ortiz</title>
+    
+    <link rel="preconnect" href="https://api.tvmaze.com">
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="funciones.js" type="module" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TVMaze</h1>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Busca una serie...">
+                <button id="searchBtn">Buscar</button>
+            </div>
+        </header>
+
+        <button id="backBtn" class="back-btn" style="display: none;">← Volver al Inicio</button>
+
+        <section id="popular-shows" class="popular-grid"></section>
+
+        <section id="show-details"></section>
+
+        <main id="episodes-map"></main>
+    </div>
+</body>
+</html>

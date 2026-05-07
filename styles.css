@@ -1,0 +1,41 @@
+:root {
+    --bg: #0f172a;
+    --text: #f8fafc;
+    --accent: #38bdf8;
+    --card-bg: #1e293b;
+}
+
+body { background-color: var(--bg); color: var(--text); font-family: 'Segoe UI', sans-serif; padding: 20px; margin: 0; }
+.container { max-width: 1000px; margin: auto; }
+
+.search-container { display: flex; gap: 10px; margin-bottom: 20px; }
+input { flex: 1; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: var(--card-bg); color: white; }
+button { padding: 12px; background: var(--accent); cursor: pointer; border: none; font-weight: bold; border-radius: 8px; color: #0f172a; }
+
+.back-btn { background: #334155; color: white; margin-bottom: 20px; border: none; padding: 10px 20px; border-radius: 8px; cursor: pointer; }
+.back-btn:hover { background: #475569; }
+
+.popular-grid .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 20px; }
+.popular-card { cursor: pointer; transition: transform 0.2s; text-align: center; }
+.popular-card:hover { transform: scale(1.05); }
+.popular-card img { width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); }
+
+.show-card { display: flex; gap: 25px; background: var(--card-bg); padding: 25px; border-radius: 15px; margin-top: 10px; }
+.show-card img { width: 160px; border-radius: 10px; }
+.summary { font-size: 0.95rem; line-height: 1.6; color: #cbd5e1; }
+
+.season-row { display: flex; flex-wrap: wrap; align-items: center; margin-top: 15px; }
+.season-title { width: 50px; font-weight: bold; color: var(--accent); font-size: 1.1rem; }
+
+.episode-box {
+    width: 34px; height: 34px; margin: 3px; border-radius: 6px;
+    display: grid; place-items: center; font-size: 0.8rem; font-weight: bold;
+}
+
+
+.rating-0, .rating-1, .rating-2 { background-color: #451010; }
+.rating-3, .rating-4, .rating-5 { background-color: #c53030; }
+.rating-6 { background-color: #dd6b20; }
+.rating-7 { background-color: #f6e05e; color: #111; }
+.rating-8 { background-color: #48bb78; }
+.rating-9, .rating-10 { background-color: #2f855a; }
